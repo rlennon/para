@@ -41,7 +41,7 @@ pipeline {
                    branch "main"
            }
            steps {
-              echo "State if not on master"
+              echo "State if on main"
            }
         }
     }
