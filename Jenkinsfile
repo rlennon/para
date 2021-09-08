@@ -33,7 +33,15 @@ pipeline {
               }
            }
            steps {
-              echo "Hello"
+              echo "State if not on master"
+           }
+        }
+	stage('Stg4') {
+           when {
+                   branch "main"
+           }
+           steps {
+              echo "State if not on master"
            }
         }
     }
